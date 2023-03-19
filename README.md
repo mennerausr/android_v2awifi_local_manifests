@@ -1,4 +1,4 @@
-# Build /e/OS 1.9 based on LineageOS 17.1 for v2awifi Samsung SM-T900
+# Build /e/OS 1.9 LineageOS 17.1 for v2awifi Samsung SM-T900
 
     #!/bin/bash
     
@@ -6,6 +6,7 @@
     export CCACHE_DIR=$HOME/ccache
     export NINJA_ARGS=-j2
     export _JAVA_OPTIONS=-Xmx4g
+    # -j2 and -Xmx4g are for a machine with only 8 GB of memory
     
     PATH=$PWD/../bin:$PATH
     
