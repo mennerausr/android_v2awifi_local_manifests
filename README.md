@@ -45,10 +45,6 @@
     repo forall -c 'git lfs pull'
     #or: ( cd prebuilts/prebuiltapks && git clone https://gitlab.e.foundation/e/os/android_prebuilts_prebuiltapks_lfs )
     
-    echo help: && hmm
-    
-    test -f build/envsetup.sh || exit
-    
     . build/envsetup.sh
     
     #lunch lineage_v2awifi-userdebug
