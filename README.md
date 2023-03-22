@@ -9,7 +9,14 @@
     # -j2 and -Xmx4g are for a machine with only 8 GB of memory
     
     PATH=$PWD/../bin:$PATH
-    
+
+    sudo apt install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick \
+    lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev \
+    libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev python-is-python3 git-lfs
+
+    git config --global user.email "myusername@mailprovider.com"
+    git config --global user.name "myUserName"
+
     rm -rf .repo/local_manifests/*
     mkdir -p .repo/local_manifests/
     #rm -rf  */samsung*/ .repo/project*/*/samsung* .repo/project-objects/exynos5420/android_*_samsung_* out/soong/.glob/*/samsung
