@@ -2,12 +2,18 @@
 
     #!/bin/bash
     
+    #should work on Ubuntu 22.04
+    #/e/OS needs git-lfs, in addition to the LineageOS 17.1 prerequisites
+    
     export USE_CCACHE=1
     export CCACHE_DIR=$HOME/ccache
     export NINJA_ARGS=-j2
     export _JAVA_OPTIONS=-Xmx4g
     # -j2 and -Xmx4g are for a machine with only 8 GB of memory
-    
+
+    mkdir eos
+    cd eos
+    mkdir $PWD/../bin
     PATH=$PWD/../bin:$PATH
 
     sudo apt install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick \
